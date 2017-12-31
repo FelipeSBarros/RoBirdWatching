@@ -4,7 +4,9 @@
 import requests, os, bs4
 import sqlite3 as lite
 import sys
-from compareFunction import DoodleTest
+#from compareFunction import DoodleTest
+runfile('/home/felipe/Raspberry/Robirdwatching/compareFunction.py', wdir='/home/felipe/Raspberry/Robirdwatching')
+
 
 url = 'https://www.google.com/doodles'              # starting url
 os.makedirs('Doodles', exist_ok=True)   # store doodles in ./Doodles
@@ -20,7 +22,7 @@ soup = bs4.BeautifulSoup(res.text)
 comicElem = soup.select('#latest img')
 
 if comicElem == []:
-    print('Could not find comic image.')
+    print('Could not find new Doodle.')
 else:
     try:
         comicUrl = 'http:' + comicElem[0].get('src')
@@ -50,6 +52,9 @@ if testResult is None or testResult is False:
               #.encode('ascii', 'ignore'), 
               comicAlt,#.encode('ascii', 'ignore'), 
     path)
+    
+    print('Sharing on twitter!')
+    postTwipy(comicAlt, comicDate, path)
 
     try:
         con = lite.connect('mydb.db')
@@ -64,3 +69,5 @@ if testResult is None or testResult is False:
     finally:
         if con:
             con.close() 
+else:
+    noDoodle()

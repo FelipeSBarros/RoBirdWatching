@@ -1,4 +1,4 @@
-#Robotwatching Project #100DaysOfCode
+# Robotwatching Project #100DaysOfCode
 This is one of the diferents repositories that I will be using during my commitment with #100DaysOfCode.
 
 **About this project**:
@@ -11,10 +11,10 @@ trhu the process. And dispite having the Raspberry PI, I don't have the camera n
 ```
 # Updating and upgrading the environment
 sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
-#Installing SQLite3
+# Installing SQLite3
 sudo apt-get install sqlite3
 
-#To check python version
+# To check python version
 python3 -V
 ```
 Will return:
@@ -30,7 +30,7 @@ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 ### Creating virtual environment
 ```
 sudo apt-get install -y python3-venv
-#Creating a folder for the virtualenv:
+# Creating a folder for the virtualenv:
 mkdir Raspberry && cd Raspberry
 python3 -m venv Robirdwatching
 
@@ -64,12 +64,13 @@ sqlite3.sqlite_version
 ```
 pip install bs4
 pip install requests
+pip install python-twitter
 ```
 
 #### source https://automatetheboringstuff.com/chapter11/
 Back to the idea:
 Idea: 
-1. donwalod google doodle image with python beatiful soup;
+1. donwalod google doodle image with python beatiful soup; :white_check_mark:
 2. Execute this function every day;
-3. Save result to Data base
-4 . send result by telegram and twitter
+3. Save result to Data base :white_check_mark:
+4. send result by telegram and twitter
