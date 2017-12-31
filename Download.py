@@ -24,8 +24,6 @@ if comicElem == []:
 else:
     try:
         comicUrl = 'http:' + comicElem[0].get('src')
-        # Download the image.
-        print('Downloading image %s...' % (comicUrl))
         res = requests.get(comicUrl)
         res.raise_for_status()
         comicAlt = comicElem[0].get('alt')
@@ -36,8 +34,9 @@ else:
         url = 'https://www.google.com/doodles' + prevLink.get('href')
 
 testResult = DoodleTest(comicAlt)
-if testResult is None or testResult is True:
+if testResult is None or testResult is False:
     # Save the image to ./xkcd.
+    print('Downloading image %s...' % (comicUrl))
     imageFile = open(os.path.join('Doodles', os.path.basename(comicUrl)), 'wb')
     path = str(os.path.join('Doodles', os.path.basename(comicUrl)))
     for chunk in res.iter_content(100000):
