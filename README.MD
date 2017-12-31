@@ -37,9 +37,9 @@ python3 -m venv Robirdwatching
 # Activating the virtual env;
 source Robirdwatching/bin/activate
 ```
-**Note: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3 if you would prefer. If you use Python 3 on your machine outside of an environment, you will need to use the python3 and pip3 commands exclusively. **
+**Note: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3 if you would prefer. If you use Python 3 on your machine outside of an environment, you will need to use the python3 and pip3 commands exclusively.**
 
-**To leave the environment, simply type the command deactivate and you will return to your original directory. **
+**To leave the environment, simply type the command deactivate and you will return to your original directory.**
 
 ### Creating SQLite3 data base
 ```
@@ -73,4 +73,4 @@ Idea:
 1. donwalod google doodle image with python beatiful soup; :white_check_mark:
 2. Execute this function every day;
 3. Save result to Data base :white_check_mark:
-4. send result by telegram and twitter
+4. send result by telegram and twitter :white_check_mark:
