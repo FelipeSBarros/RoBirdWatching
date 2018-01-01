@@ -1,10 +1,10 @@
 import sqlite3 as lite
 import sys
 def DoodleTest(newCandidate):
-    print("testing if ", newCandidate, " is realy new!")
+    print("testing if ", newCandidate, " is really new!")
     
     try:
-        con = lite.connect('mydb.db')
+        con = lite.connect('/home/felipe/Raspberry/Robirdwatching/mydb.db')
         cur = con.cursor()
         cur.execute("select count(*) from Metadata;")
         lID=cur.fetchone()
