@@ -67,10 +67,10 @@ pip install requests
 pip install python-twitter
 ```
 
-#### source https://automatetheboringstuff.com/chapter11/
 Back to the idea:
 Idea: 
 1. donwalod google doodle image with python beatiful soup; :white_check_mark:
 2. Execute this function every day;
 3. Save result to Data base :white_check_mark:
 4. send result by telegram and twitter :white_check_mark:
+source https://automatetheboringstuff.com/chapter11/

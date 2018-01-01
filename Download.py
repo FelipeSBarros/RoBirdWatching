@@ -4,9 +4,8 @@
 import requests, os, bs4
 import sqlite3 as lite
 import sys
-#from compareFunction import DoodleTest
-runfile('/home/felipe/Raspberry/Robirdwatching/compareFunction.py', wdir='/home/felipe/Raspberry/Robirdwatching')
-
+from compareFunction import DoodleTest
+from TwitterSharing import noDoodle, postTwipy
 
 url = 'https://www.google.com/doodles'              # starting url
 os.makedirs('Doodles', exist_ok=True)   # store doodles in ./Doodles

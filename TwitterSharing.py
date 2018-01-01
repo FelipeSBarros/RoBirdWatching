@@ -7,8 +7,7 @@ Created on Sun Dec 31 19:17:38 2017
 
 import twitter
 
-#import accessTolkens
-#os.system('python /home/felipe/Raspberry/Robirdwatching/accessTolkens.py')
+from accessTolkens import consumer_key, consumer_secret, access_tolken, access_tolken_secret
 
 def postTwipy(comicAlt, comicDate, path):
     api = twitter.Api(consumer_key=consumer_key,
