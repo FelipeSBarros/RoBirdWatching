@@ -3,10 +3,12 @@ This is one of the diferents repositories that I will be using during my commitm
 
 **About this project:**  
 The ideia is to build a trap cam using Raspberry PI, with usb cam and movment sensor, so every time a bird come to my window to eat the fruits, It takes a picture and share with me the picture took by telegram and/or twitter. A audacious goal I set with this project is build a machine learning to identify the species in the picture taken. Not sure how futher I will go, so I will try to work modularly:  
-**Module 1:** Build the workflow and function to get some data and sharing it on a twitter bor; :white_check_mark: You can find this module [here](https://github.com/FelipeSBarros/1stRoBirdWatchingModule)  
-**Module 2:** Build on #RaspBerry a trigger with movement sensor so everytime a bird come by the window a picture of him is taken;  
-**Module 3:** Build a machine learning (possible with #TensorFlow and/or #OpenCV for computer vision) to identfy the bird species from the picture took on Module2;  
-**Module 4:** Join both previous module in one workflow  
+
+* **Module 1:** Build the workflow and function to get some data and sharing it on a twitter bor; :white_check_mark:  
+You can find this module [here](https://github.com/FelipeSBarros/1stRoBirdWatchingModule)  
+* **Module 2:** Build on #RaspBerry a trigger with movement sensor so everytime a bird come by the window a picture of him is taken;  
+* **Module 3:** Build a machine learning (possible with #TensorFlow and/or #OpenCV for computer vision) to identfy the bird species from the picture took on Module2;  
+* **Module 4:** Join both previous module in one workflow  
 
 But the idea is the enjoy the process and learn also about SQLite3.
 
