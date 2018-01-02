@@ -15,7 +15,7 @@ def postTwipy(comicAlt, comicDate, path):
                   access_token_key=access_tolken,
                   access_token_secret=access_tolken_secret)
     
-    api.PostUpdate(status='Todays\' Doodle ', media = path)
+    api.PostUpdate(status='#Bot idealized and created during #100DaysOfCode \n Todays\' Doodle ', media = path)
     
 def noDoodle():
     api = twitter.Api(consumer_key=consumer_key,
@@ -23,4 +23,4 @@ def noDoodle():
                   access_token_key=access_tolken,
                   access_token_secret=access_tolken_secret)
     
-    api.PostUpdate('Unfortunatly, no new Doodle today')
+    api.PostUpdate('#Bot idealized and created during #100DaysOfCode \n Unfortunately, no new Doodle today')
